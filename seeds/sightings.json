@@ -1,0 +1,32 @@
+[
+  {
+    "date": "Tue Jan 12 2016 08:00:00 GMT-0500 (EST)",
+    "species": "American Robin",
+    "gender": "Female",
+    "location": "Williamsburg, NY"
+  },
+  {
+    "date": "Tue Jan 12 2016 08:00:00 GMT-0500 (EST)",
+    "species": "Mourning Dove",
+    "gender": "Female",
+    "location": "Chelsea, NY"
+  },
+  {
+    "date": "Tue Jan 12 2016 08:00:00 GMT-0500 (EST)",
+    "species": "Red Bellied Woodpecker",
+    "gender": "Male",
+    "location": "Prospect Heights, NY"
+  },
+  {
+    "date": "Tue Jan 12 2016 08:00:00 GMT-0500 (EST)",
+    "species": "Northern Cardinal",
+    "gender": "Male",
+    "location": "Soho, NY"
+  },  
+  {
+    "date": "Tue Jan 12 2016 08:00:00 GMT-0500 (EST)",
+    "species": "Song Sparrow",
+    "gender": "Female",
+    "location": "East Village, NY"
+  }
+]

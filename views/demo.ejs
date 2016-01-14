@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BirdWatchr Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+  <h1>Demo</h1>
+  <h3>Test GeoLocation:</h3>
+    <form>
+      <label for="location">Enter Location: </label>
+      <input id="location" type="text" placeholder="City or Zip" name="location">
+      <input id="submit-location" type="submit" value="Get Latitude & Longitude">
+    </form>
+    <script id="lat-long" type="lat-long-template">
+        <p>{{lat_long}}</p>
+    </script>
+  <button id="view-all-birds-btn">View All Birds</button>
+    <script id="demo-sighting-info" type="demo-sighting-template">
+      <p>{{date}}: {{gender}} {{species}} — {{location}} (Latitude: {{lat_long.lat}}, Longitude: {{lat_long.lng}})</p>
+    </script>
+</body>
+</html>

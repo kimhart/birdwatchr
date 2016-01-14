@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>BirdWatchr</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/js/main.js"></script>
 </head>
 <body>
   <h1>Spotted a bird?</h1>
   <form method="POST" action="/sightings">
-    <input type="text" name="sighting[bird]">
+    <input type="text" name="species" placeholder="Species">
+    <input type="text" name="gender" placeholder="Gender">
+    <input type="text" name="location" placeholder="City, State">
     <input type="submit" value="Create">
   </form>
 </body>
