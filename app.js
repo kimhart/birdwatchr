@@ -4,11 +4,12 @@ var bodyParser = require('body-parser');
 var handlebars = require('handlebars');
 var geocoder = require('geocoder');
 var MongoClient = require('mongodb').MongoClient;
-var mongoUrl = 'mongodb://localhost:27017/birds';
+var mongoUrl = 'mongodb://localhost:27017/birds2';
 var ObjectId = require('mongodb').ObjectId;
 
 var db;
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="BirdApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BirdWatchr</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/birds_controller.js"></script>
 </head>
   <body>
     <h1>Birds of NY</h1>
@@ -14,9 +17,11 @@
     <a href="/demo">Demo</a>
     <br>
     <h3>3 Most Recent Sightings:</h3>
-      <script id="sighting-info" type="sighting-template">
-        <p>{{date}}: {{gender}} {{species}} — {{location}}</p>
-      </script>
+      <div ng-controller="BirdController as bird">
+      <ul>
+        <li ng-repeat="bird in sightings.all">{{date}}: {{gender}} {{species}} — {{location}}</li>
+      </ul>
+      </div>
   </body>
-</html>
+</html>s
 
