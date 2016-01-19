@@ -2,7 +2,20 @@ angular.module('BirdApp').controller('BirdsController', BirdsController);
 
 function BirdsController(){
 
-  var bird = this;
+  var sightings = this;
+
+  sightings.all = [];
+
+  sightings.fetch = function(){
+    $.ajax({
+      type: "GET",
+      url: 'https://randomuser.me/api/',
+      dataType: 'json'
+      }).done(function(data){
+      users.all.push(data.results[0].user.name.first);
+      });
+    };
+
 
 // DONT USE THIS BUT USE SIMILAR STUFF
 //   var getSightings = function(){
